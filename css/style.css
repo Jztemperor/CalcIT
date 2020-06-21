@@ -1,0 +1,183 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+:root {
+  --color-gradient-1: #cc2b5e;
+  --color-gradient-2: #753a88;
+  --color-plate: #8d99ae;
+  --color-text: #fff; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient-1)), to(var(--color-gradient-2)));
+  background-image: -o-linear-gradient(left, var(--color-gradient-1), var(--color-gradient-2));
+  background-image: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2));
+  color: var(--color-text); }
+
+.calculator {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px; }
+
+.calculator > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1; }
+
+.calculator > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3; }
+
+.calculator > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5; }
+
+.calculator > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7; }
+
+.calculator > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1; }
+
+.calculator > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3; }
+
+.calculator > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5; }
+
+.calculator > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7; }
+
+.calculator > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1; }
+
+.calculator > *:nth-child(10) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3; }
+
+.calculator > *:nth-child(11) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5; }
+
+.calculator > *:nth-child(12) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7; }
+
+.calculator > *:nth-child(13) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1; }
+
+.calculator > *:nth-child(14) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3; }
+
+.calculator > *:nth-child(15) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5; }
+
+.calculator > *:nth-child(16) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7; }
+
+.view {
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 23%;
+  right: 41.1%;
+  border-bottom: 1px solid #fff; }
+  @media only screen and (max-width: 1901px) {
+    .view {
+      position: initial;
+      text-align: center;
+      border: none;
+      padding-bottom: 2rem; } }
+  @media only screen and (max-width: 450px) {
+    .view {
+      position: initial;
+      text-align: center;
+      border: none;
+      padding-bottom: 2rem; } }
+  @media only screen and (max-width: 400px) {
+    .view {
+      position: initial;
+      text-align: center;
+      border: none;
+      padding-bottom: 2rem; } }
+
+.line {
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  top: 20%;
+  right: 40%; }
+
+.plates {
+  padding: 2rem;
+  display: inline-block;
+  background-color: #a06cd5;
+  border: none;
+  opacity: .9;
+  color: #eee;
+  text-transform: uppercase;
+  font-size: 2rem;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+  .plates:hover {
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px); }
+  .plates:focus {
+    outline: none;
+    -webkit-transform: translateY(1.5px);
+        -ms-transform: translateY(1.5px);
+            transform: translateY(1.5px); }
+  .plates:nth-child(17) {
+    -ms-grid-column-span: 2;
+    grid-column: span 2; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative; }

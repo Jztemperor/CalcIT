@@ -1,0 +1,37 @@
+// Color Vars
+
+:root{
+    --color-gradient-1: #cc2b5e;
+    --color-gradient-2: #753a88;
+    --color-plate: #8d99ae;
+    --color-text: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    
+}
+
+html{
+   
+    font-size: 62.5%; //1rem = 10px 10px/16px = 62.5%
+
+    
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2));
+    color: var(--color-text);
+    
+}
